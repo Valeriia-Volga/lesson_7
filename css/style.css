@@ -1,0 +1,292 @@
+/* для кирилицы &display=swap&subset=cyrillic-ext */
+
+@import url("https://fonts.googleapis.com/css?family=Pacifico:regular&display=swap");
+/* для основного font-family: 'Pacifico'; */
+
+@import url("https://fonts.googleapis.com/css?family=Caveat:regular,500&display=swap");
+/*  для основного font-family: 'Caveat', cursive; */
+
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:regular,700);
+/* заголовки font-family: 'Amatic SC', cursive; */
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+/* для основного font-family: 'Lobster', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap&subset=cyrillic-ext");
+/* для основного font-family: 'Indie Flower', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap&subset=cyrillic-ext");
+/* для основного font-family: 'Satisfy', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+/* для основного font-family: 'Bad Script', cursive; */
+
+@font-face {
+	font-family: "Apura";
+	src: url("../fonts/ApuraRegular.woff2") format("woff2"), url("../fonts/ApuraRegular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+
+ul {
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+}
+
+p {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	color: black;
+	font-family: "Bad Script", cursive;
+	font-size: 20px;
+	font-weight: bold;
+	background: linear-gradient(to bottom, #f3c5bd 0%, #e86c57 32%, #ea2803 57%, #ff6600 65%, #c72200 100%);
+}
+/* плавный переход */
+html {
+	scroll-behavior: smooth;
+}
+
+/* ============================ТЕЛО============================== */
+
+h1 {
+	font-family: "Apura";
+	text-transform: uppercase;
+	text-align: left;
+	word-spacing: 5px;
+	font-size: 70px;
+	max-width: 33.3%;
+	margin: 50px auto 10px auto;
+}
+
+ul.header-list {
+	margin-bottom: 30px;
+}
+
+ul.header-list a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.link1,
+.link2,
+.link3,
+.link4 {
+	line-height: 100%;
+	min-height: 25px;
+	padding: 0px 0px 0px 35px;
+	margin-bottom: 10px;
+}
+
+.link1 {
+	background-image: url("../img/flow.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.link2 {
+	background-image: url("../img/animal.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.link3 {
+	background-image: url("../img/fish.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.link4 {
+	background-image: url("../img/sad.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+div.header img.header {
+	float: left;
+	max-width: 50%;
+	margin: 10px;
+	border-top: 5px dashed rgb(34, 28, 28);
+	border-right: 5px solid rgb(34, 28, 28);
+	border-bottom: 5px dashed rgb(34, 28, 28);
+	border-left: 5px solid rgb(34, 28, 28);
+}
+
+div.header {
+	max-width: 80%;
+	/* margin: 25px; */
+	background-color: rgb(87, 101, 107);
+	padding: 15px;
+	border: 2px dotted rgb(0, 0, 0);
+}
+
+.item {
+	clear: both;
+}
+
+.container {
+	max-width: 90%;
+	margin: 0px auto;
+	padding: 5%;
+	/* поля */
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+
+/* =========================MAIN=============== */
+
+.text {
+	/* max-width: 90%;
+	margin: 0px auto; */
+	margin-bottom: 25px;
+}
+
+.subtitle1,
+.subtitle2,
+.subtitle3,
+.subtitle4,
+.subtitle5 {
+	max-width: 800px;
+	margin: 0px 0px 25px 0px;
+	background-color: rgb(233, 184, 184);
+	/* что это такое? поменяла на border и линия ушла за кортинку */
+	border: 2px dotted black;
+	font-size: 20px;
+	text-align: center;
+}
+
+h2 img {
+	/* здесь поменяла на right и ничего не изменилось */
+	float: left;
+	width: 100%;
+}
+
+/* ============================ПОДВАЛ============================ */
+
+.subtitle,
+.footerpicture {
+	display: block;
+	font-size: 80px;
+	max-width: 30%;
+	margin: 50px auto 30px auto;
+	text-align: center;
+	font-weight: 500;
+	font-style: normal;
+	font-family: "Apura";
+	text-align: center;
+}
+
+footer {
+	font-size: 0;
+}
+
+.footer1,
+.footer2,
+.footer3,
+.footer4,
+.footer5,
+.footer6,
+.footer7 {
+	text-align: center;
+}
+
+.footer1 li,
+.footer2 li,
+.footer3 li,
+.footer4 li,
+.footer5 li,
+.footer6 li,
+.footer7 li {
+	display: inline;
+}
+
+.img-footer1,
+.img-footer2,
+.img-footer3,
+.img-footer4,
+.img-footer5,
+.img-footer6,
+.img-footer7 {
+	font-size: 20px;
+	border: 4px solid #000000;
+	border-radius: 0px 20% 0px 20%;
+	max-width: 30%;
+	vertical-align: top;
+	filter: drop-shadow(10px 15px 4px #000000);
+}
+
+.img-test {
+	display: block;
+	min-width: 20%;
+	border: 4px solid #000000;
+	margin: -22.5% 0px 20px 430px;
+	max-width: 32.2%;
+	filter: drop-shadow(10px 15px 4px #000000);
+	border-radius: 0px 20% 0px 20%;
+}
+
+.picture {
+	max-width: 80%;
+	height: 1500px;
+	background: url(../img/df1.jpeg) 0 0 / 25% no-repeat, url(../img/df2.jpeg) 40% 0 / 25% no-repeat,
+		url(../img/df3.jpeg) 100% 85% / auto 35% no-repeat, url(../img/df4.jpeg) 0 100% / 25% no-repeat,
+		url(../img/df5.jpeg) 1% 50% / auto 35% no-repeat, url(../img/df6.jpeg) 60% 50% / auto 40% no-repeat,
+		url(../img/df7.jpeg) 45% 97% / 25% no-repeat, url(../img/df8.jpeg) 100% 0 / auto 35% no-repeat,
+		url(../img/footer_pattern.jpeg) 0 0 / cover no-repeat;
+	margin: 0 auto;
+	border: 5px double black;
+}
+
+.footer-final {
+	display: block;
+	max-width: 1000px;
+	margin: 30px auto;
+	border: 1px solid black;
+	box-shadow: 10px 15px 20px 10px black;
+	border-radius: 50%;
+}
+
+h6 {
+	margin-top: 100px;
+	/* margin-bottom: 50px; */
+	font-size: 20px;
+	text-align: center;
+}
+
+/* text-shadow: 5px 5px 10 rgb(238, 112, 8); */
